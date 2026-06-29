@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="author" content="Nusrat Jahan Shajmin">
+    <meta name="description" content="Student Service Request Portal for submitting various student service requests.">
+    <title>Student Service Request Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="home">
+        <h1>Student Service Request Portal</h1>
+        <p>A simple portal for submitting student service requests.</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+
+       <h2 id="services">Available Services</h2>
+        <p>
+            Students can use this portal to request transcripts, report ID card
+            issues or submit general inquiries to the student affairs department
+        </p>
+
+        <h2>Service Request Form</h2>
+
+        <form>
+            <table>
+                <tr>
+                    <td>Student Name:</td>
+                    <td>
+                        <input type="text" name="studentName" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Student ID:</td>
+                    <td>
+                        <input type="text" name="studentId" maxlength="10" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Email:</td>
+                    <td>
+                        <input type="email" name="email" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Service Type:</td>
+                    <td>
+                        <select name="serviceType">
+                            <option>Transcript Request</option>
+                            <option>ID Card Issue</option>
+                            <option>General Inquiry</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Urgency Level:</td>
+                    <td>
+                        <input type="radio" name="urgency" value="normal" checked> Normal
+                        <input type="radio" name="urgency" value="urgent"> Urgent
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Additional Details:</td>
+                    <td>
+                        <textarea name="details" rows="5"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Submit" class="submit-btn">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </main>
+
+    <footer id="contact">
+        <p>&copy; 2026 Student Affairs Department. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
